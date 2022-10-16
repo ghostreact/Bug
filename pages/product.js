@@ -5,12 +5,13 @@ import NavbarComponent from "../Components/NavbarComponent";
 export default function Product({ children }) {
   return (
     <>
+    <NavbarComponent />
       <Grid.Container>
         <Grid>
           <Container>
             <Button.Group vertical>
               <Button color={"error"}>
-                <Link href={"./product/add"}>A</Link>
+                <Link href={"/products/add"}>A</Link>
               </Button>
               <Button>B</Button>
               <Button>C</Button>

@@ -38,7 +38,7 @@ function MyApp({ Component, pageProps }) {
     //   }}
     // >
     <NextUIProvider>
-      <NavbarComponent />
+      {/* <NavbarComponent /> */}
       <Component {...pageProps} />
     </NextUIProvider>
     // </NextThemesProvider>
