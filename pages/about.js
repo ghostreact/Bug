@@ -4,9 +4,9 @@ import NavbarComponent from "../Components/NavbarComponent";
 
 const About = () => {
   return (
-    <NavbarComponent>
+    
       <h1>About Page</h1>
-    </NavbarComponent>
+   
   );
 };
 

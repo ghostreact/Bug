@@ -15,7 +15,7 @@ const SignUp = () => {
   const onSubmit = (data) => console.log(data);
 
   return (
-    <NavbarComponent>
+    
       <Container gap={5} responsive>
         <Spacer y={6.5} />
 
@@ -125,7 +125,7 @@ const SignUp = () => {
           </Container>
         </form>
       </Container>
-    </NavbarComponent>
+    
   );
 };
 

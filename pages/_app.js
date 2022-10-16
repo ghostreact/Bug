@@ -1,6 +1,7 @@
 import { createTheme, NextUIProvider } from "@nextui-org/react";
 // import "../styles/globals.css";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+import NavbarComponent from "../Components/NavbarComponent";
 
 const lightTheme = createTheme({
   type: "light",
@@ -36,10 +37,11 @@ function MyApp({ Component, pageProps }) {
     //     dark: darkTheme.className,
     //   }}
     // >
-      <NextUIProvider>
-        <Component {...pageProps} />
-      </NextUIProvider>
-   // </NextThemesProvider>
+    <NextUIProvider>
+      <NavbarComponent />
+      <Component {...pageProps} />
+    </NextUIProvider>
+    // </NextThemesProvider>
   );
 }
 

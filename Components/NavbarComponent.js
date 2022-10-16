@@ -3,11 +3,9 @@ import { Layout } from "../Layout/Layout";
 import { NextLogo } from "./Logo";
 import NextLink from "next/link";
 
-
-export default function NavbarComponent({children}) {
+export default function NavbarComponent({ children }) {
   return (
-    <>
-     <Layout>
+    <Layout>
       <Navbar isBordered variant={"sticky"}>
         <Navbar.Toggle showIn={"xs"} />
         <Navbar.Brand
@@ -37,7 +35,7 @@ export default function NavbarComponent({children}) {
               dflex: "center",
             }}
           >
-            <NextLink href="#">
+            <NextLink href="/product">
               <Navbar.Link>Product</Navbar.Link>
             </NextLink>
 
@@ -87,8 +85,5 @@ export default function NavbarComponent({children}) {
         </Navbar.Content>
       </Navbar>
     </Layout>
-         {children} 
-    </>
-   
   );
 }
